@@ -1,0 +1,105 @@
+<html>
+<head><title>G Surya Teja</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="./font-awesome-4.1.0/css/font-awesome.min.css">
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" 
+   src="jquery-ui.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	    $("#Intro").hide();
+	    $("#Interests").hide();
+	    $("#PastTime").hide();
+	    $("#top").hide();
+		$(".circular").hide();
+		$("#content").hide();
+		$("#footer").hide();
+         $("#top").slideDown(500,function(){
+		     $("#Intro").show("scale",{percent:100},400);
+		        $("#Interests").show("scale",{percent:110},500);
+		        $("#PastTime").show("scale",{percent:115},600,function(){
+		            $(".circular").fadeIn(600);
+		            $("#content").fadeIn(400);
+		            });
+		        });
+         $("#footer").show(500);
+		$("#one").css('visibility','visible');
+			$("#two").css('visibility','hidden');
+			$("#three").css('visibility','hidden');
+			$("#content p").text("");
+			$("#content p").append("<ul><li>I am a junior pursuing B.Tech in the department of Computer Science and Engineering.</li><li>I play Badminton, Cricket, Table Tennis and Volley Ball with decent proficiency.</li><li>I like to stay updated with technology news, gadgets, games and stuff.</li><li>I am a coder, web designer, enthusiast, gamer, music lover, gadget freak and I like being 'Perfect'.</li>");
+		$("#Intro").click(function(){
+			$("#one").css('visibility','visible');
+			$("#two").css('visibility','hidden');
+			$("#three").css('visibility','hidden');
+			$("#content p").text("");
+			$("#content p").append("<ul><li>I am a junior pursuing B.Tech in the department of Computer Science and Engineering.</li><li>I play badminton, cricket, Table Tennis and Volley Ball with decent proficiency.</li><li>I like to stay updated with technology news, gadgets, games and stuff.</li><li>I am a coder, web designer, enthusiast, gamer, music lover, gadget freak and I like being 'Perfect'.</li>");
+		});
+		$("#Interests").click(function(){
+			$("#two").css('visibility','visible');
+			$("#one").css('visibility','hidden');
+			$("#three").css('visibility','hidden');
+			$("#content p").text("");
+			$("#content p").append("<ul><li>My primary interest as of now is Software Development. I worked on web development projects which increased my interest towards development.</li><li>I haven't taken up any research project until now, so I will not comment about it. But as far as my research interests are concerned, I am very enthusiastic to take up project on applications of Machine Learning and Artificial Intelligence in the field of Robotics. Though I read up articles about it, but haven't really done any work on my own in this field :/.</li><li>I listen to music a lot. I like to explore genres. My artists/bands EMINEM, Metallica, Linkin Park, Tool, Green Day and many more.</li><li>In my past time, I even try to spit some of Eminem's verses,coz I love challenges \\m/.</ul>");
+		});
+		$("#PastTime").click(function(){
+			$("#three").css('visibility','visible');
+			$("#two").css('visibility','hidden');
+			$("#one").css('visibility','hidden');
+			$("#content p").text("");
+			$("#content p").append("<table><tr><td>Programming :</td><td> C, C++, Java, Python</td></tr><tr><td>Databases :</td><td>MonogoDB, MySQL, Derby</td></tr><tr><td style='vertical-align:top'>Web Tools:</td><td >HTML, CSS, JavaScript, AngularJS, NodeJS, AJAX, JQuery, PHP</td></tr><tr style='vertical-align:top'><td>Softwares/IDE/Editor:<td>Vim, NetBeans, Octave, MS Visual Studio 2012, JetBeans WebStorm.</td></tr></table>");
+		});
+			});
+</script>
+
+</head>
+<body>
+<div id="top">
+<h2 style="font-family:'Open Sans Condensed',sans-serif;">G Surya Teja</h2>
+<p>Student, IIT Kharagpur</p>
+
+	<div id="navbar">
+		<ul>
+			<li style="font-family:'Open Sans Condensed',sans-serif;font-size:20px;"><a href="#">Home</a></li>
+			<li style="font-family:'Open Sans Condensed',sans-serif;font-size:20px;"><a href="resume.pdf" target="blank">Resume</a></li>
+			<li style="font-family:'Open Sans Condensed',sans-serif;font-size:20px;"><a href="gallery" target="blank">Gallery</a></li>
+			<li style="font-family:'Open Sans Condensed',sans-serif;font-size:20px;"><a href="projects.html">Projects</a></li>
+	</div>
+</div>
+
+<div id="middle">
+    <div id="leftWrap" style="width:50%;min-width:600px;padding-left:50px;">
+    <div id="about">
+		<div id="Intro">About Me <div id="one" class="arrowup"></div></div>
+		<div id="Interests">Interests<div id="two" class="arrowup"></div></div>
+		<div id="PastTime">Skills<div id="three" class="arrowup"></div></div>
+		<div id="content">
+			<p> </p>
+		</div>
+	</div>
+
+    </div>
+    <div id="rightWrap" style="display:inline-block;width:40%;padding-left:100px;">
+
+	<div class="circular"></div>
+    </div>
+
+
+	</div>
+
+<div id="footer" style="color:rgba(255,255,255,0.5)">
+    <span style="display:inline-block;">Address : A-316, Lal Bahadur Shashtry Hall of Residence<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Indian Institute of Technology, Kharagpur<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;West Bengal - 721302</span>
+	<span id="contactno" style="display:inline-block">Contact Number : +91-9641638952, +91-8121585218<br>
+	    Email : surya.cse.iitkgp@gmail.com, gsteja@cse.iitkgp.ac.in<br>
+	    <span style="margin-left:80px;font-size:13px;">&copy; Copyrights Reserved</span>
+	</span>
+	<span style="float:right" id="socials">
+	    <p>Connect with me</p>
+	    <a href="https://www.facebook.com/surya.cse.iitkgp" target="blank"><i class="fa fa-facebook-square fa-3x"></i></a>
+	    <a href="https://www.linkedin.com/profile/view?id=205527096" target="blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
+	    <a href="https://plus.google.com/u/0/116645874621108085844/" target="blank"><i class="fa fa-google-plus-square fa-3x"></i></a>
+
+    </span>
+</div>
+</body>
+</html>
